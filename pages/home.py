@@ -1,8 +1,13 @@
 import streamlit as st
 from services import auth_service
 import firebase_admin
-from firebase_admin import auth
+from firebase_admin import auth, credentials
 import json
+
+# Initialize Firebase Admin SDK
+if not firebase_admin._apps:
+    cred = credentials.Certificate("path/to/your/firebase/credentials.json")
+    firebase_admin.initialize_app(cred)
 
 def app():
     st.title("Welcome to Job Seeker Pro")
