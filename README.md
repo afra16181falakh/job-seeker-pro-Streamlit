@@ -1,6 +1,5 @@
 # Job Seeker Pro
 ## Description
-
 Job Seeker Pro is a Streamlit-based web application designed to assist job seekers in finding job opportunities, managing their profiles, and uploading resumes. The application integrates with various services to provide insights and streamline the job application process.
 
 ## Features
